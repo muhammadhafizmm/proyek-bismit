@@ -1,0 +1,55 @@
+/* navbar ----------------------------------------------------------------------------------------------------------------------------*/
+li:hover {
+    background:#FFB736;
+    transition: all .5s;
+}
+
+.navbar {
+    background: #292533;
+    font-size: 20px;
+}
+
+.nav-link {
+    color:white;
+}
+
+.nav-item #active{
+    color:#FFB736;
+}
+
+#active:hover{
+    color:#292533;
+}
+
+#burger {
+    outline:none;
+}
+
+#logo {
+    width: 60px;
+}
+
+#navElements a:hover{
+    color:#353536;
+}
+
+@media (max-width:992px) {
+    li {
+        width:100vw;
+        padding-left:15px;
+    }
+}
+
+
+@media (min-width:992px){
+    .navbar li{
+        height:4.1em;
+        display:flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #hireUs {
+        background:#FFB736;
+    }
+}
+/* end of navbar ---------------------------------------------------------------------------------------------------------------------*/
