@@ -1,0 +1,147 @@
+body {
+    font-family:"muli";
+}
+
+li:hover {
+    background:#FFB736;
+    transition: all .5s;
+}
+
+.content {
+    margin-top:4em;
+    margin-bottom:350px;
+}
+
+.tile {
+    width:100%;
+    height:auto;
+    margin:1em;
+}
+
+/* sections */
+
+.gallery {
+    background: white;
+    position: relative;
+}
+
+.contacts {
+    background: grey;
+    height: 100vh;
+}
+
+.location {
+    background: blue;
+    height: 70vh;
+}
+
+.sosmed {
+    background: darkblue;
+    height: 70vh;
+}
+
+/*end of sections */
+
+.navbar {
+    background: #292533;
+    font-size: 20px;
+}
+
+.nav-link {
+    color:white;
+}
+
+.nav-item #active{
+    color:#FFB736;
+}
+
+.sideBtn {
+    color:rgb(77, 55, 18);
+    background:#FFB736;
+    border: none;
+    outline:none;
+}
+
+.numBtn {
+    font-size: 25px;
+    border:none;
+    height: 100%;
+    width:1.5em;
+    background: #FFF6A7;
+}
+
+#paginator {
+    display:flex;
+    height:40px;
+    width:100vw;
+    position: relative;
+    bottom: 200px;
+    justify-content: center;
+    font-family: "rubik";
+}
+
+#header {
+    display:flex;
+    justify-content: center;
+}
+
+#active:hover{
+    color:#292533;
+}
+
+#mainTitle {
+    color: #292533;
+    text-shadow: 0px 4px 2.5px rgba(41, 37, 51,.2);
+    font-size: 4em;
+    font-weight: 900;
+    font-family: "rubik";
+    text-align: center;
+    margin-top:2em;
+    padding-bottom:40px;
+    letter-spacing: .1em;
+    border-bottom: 8px solid #292533;
+    width: 7em;
+}
+
+#logo {
+    width: 60px;
+}
+
+#burger {
+    outline:none;
+}
+
+#navElements a:hover{
+    color:#353536;
+}
+
+#upBtn {
+    color:rgb(77, 55, 18);
+    background:#FFB736;
+    border:none;
+    outline:none;
+    position: absolute;
+    bottom: 60px;
+    right:40px;
+}
+
+
+@media (max-width:992px) {
+    li {
+        width:100vw;
+        padding-left:15px;
+    }
+}
+
+
+@media (min-width:992px){
+    .navbar li{
+        height:4.1em;
+        display:flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #hireUs {
+        background:#FFB736;
+    }
+}
