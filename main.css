@@ -1,0 +1,397 @@
+body {
+    font-family:"muli";
+    overflow-x:hidden;
+}
+
+/* navbar ----------------------------------------------------------------------------------------------------------------------------*/
+li:hover {
+    background:#FFB736;
+    transition: all .5s;
+}
+
+.navbar {
+    background: #292533;
+    font-size: 20px;
+}
+
+.nav-link {
+    color:white;
+}
+
+.nav-item #active{
+    color:#FFB736;
+}
+
+#active:hover{
+    color:#292533;
+}
+
+#burger {
+    outline:none;
+}
+
+#logo {
+    width: 60px;
+}
+
+#navElements a:hover{
+    color:#353536;
+}
+
+@media (max-width:992px) {
+    li {
+        width:100vw;
+        padding-left:15px;
+    }
+}
+
+
+@media (min-width:992px){
+    .navbar li{
+        height:4.1em;
+        display:flex;
+        align-items: center;
+        padding: 0 20px;
+    }
+    #hireUs {
+        background:#FFB736;
+    }
+}
+/* end of navbar ---------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* SECTIONS */
+/* gallery elements ------------------------------------------------------------------------------------------------------------------*/
+
+.gallery {
+    background: white;
+    position: relative;
+}
+
+.content {
+    margin-top:4em;
+    margin-bottom:350px;
+}
+
+.tile {
+    width:100%;
+    height:auto;
+    margin:1em;
+}
+
+
+/* end of gallery elements ----------------------------------------------------------------------------------------------------------*/
+/* contact elements -----------------------------------------------------------------------------------------------------------------*/
+.contact {
+    background: grey;
+    position:relative;
+    /* The image used */
+    background-image: 
+        linear-gradient(
+        rgba(209, 209, 209, 0.7),
+        rgba(209, 209, 209, 0.7)
+      ),url(imgs/parallax.jpg);
+
+    /* Set a specific height */
+    /* height: 500px; */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+
+.contactElements {
+    padding-bottom:250px;
+}
+
+.contactElement {
+    padding:0;
+    margin-top:5em;
+    margin-bottom:5em;
+}
+
+.contactBtn {
+    position:absolute;
+    background:none;
+    border:none;
+    margin:none;
+    padding:0;
+    width:8em;
+}
+
+.contactBtn:hover {
+    width:8.5em;
+    transition: all .1s;
+}
+
+.contactDesc {
+    position:relative;
+    background:white;
+    font-size:1.5em;
+    width:15em;
+    height:100%;
+    padding:10px;
+    text-align:center;
+    margin-top:300px;
+    font-weight: bold;
+    color:black;
+    border: 2px solid black;
+}
+
+.contact h4 {
+    font-weight: bold;
+}
+
+@media(max-width:1100px){
+    .contactBtn {
+        position:absolute;
+        background:none;
+        border:none;
+        margin:none;
+        padding:0;
+        width:7em;
+    }
+    .contactDesc {
+        position:relative;
+        background:white;
+        font-size:1.3em;
+        width:12em;
+        height:100%;
+        padding:10px;
+        text-align:center;
+        margin-top:200px;
+        font-weight: bold;
+        color:black;
+        border: 2px solid black;
+    }
+}
+
+/* end of contact elements ----------------------------------------------------------------------------------------------------------*/
+/* location elements ----------------------------------------------------------------------------------------------------------------*/
+.location {
+    position:relative;
+}
+
+.locationElement {
+    height:20em;
+}
+
+.google-maps {
+    position: relative;
+    /* This is the aspect ratio */
+    padding-bottom: 320px;
+    height: 0;
+    overflow:hidden;
+}
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#locationTitle {
+    color: black;
+    text-shadow: 0px 4px 2.5px rgba(41, 37, 51,.2);
+    font-size: 2em;
+    font-weight: 900;
+    font-family: "rubik";
+    text-align:center;
+    margin-top:1.5em;
+    padding-bottom:15px;
+    border-bottom: 8px solid black;
+    width: 7.2em;
+}
+
+#locationLabel {
+    background: #FFB736;
+}
+
+#locationLabel img {
+    width:3.2em;
+}
+
+#locationDesc {
+    margin-top:2.8em;
+}
+
+#locationLabel h4 {
+    margin-top:.5em;
+    font-weight: bold;
+    font-size:1.3em;
+    color:black;
+    text-align: center;
+}
+
+/* end of location ------------------------------------------------------------------------------------------------------------------*/
+/* sosmed elements ------------------------------------------------------------------------------------------------------------------*/
+.sosmed {
+    background: #292533;
+    position:relative;
+}
+
+/* Form */
+form {
+    margin-top:2.5em;
+    width: 41em;
+}
+
+textarea {
+    width: 100%;
+    height:10em;
+}
+
+input,textarea {
+    background:none;
+    border:1.5px solid grey;
+}
+
+input[type=text] {
+    margin-right: .7em;
+}
+
+input[type=text],input[type=email] {
+    width:20em;
+    height:2.5em;
+}
+
+textarea::placeholder,input[type=text]::placeholder,input[type=email]::placeholder {
+    padding-left:1em;
+    color:white;
+    padding-top:.5em;
+    font-size: 1.3em;
+}
+
+#id {
+    margin-bottom:1.5em;
+}
+
+#email {
+    margin:2.5em;
+    margin-top:5em;
+}
+
+#submitBtn button {
+ background:#463056;
+ border:none;
+ color:white;
+ padding-left:2.5em;
+ padding-right:2.5em;
+ margin-top:.5em;
+ width:11em;
+ height:2.5em;
+ font-size:1.3em;
+}
+
+#form_title {
+    width:100%;
+}
+
+#form_title img {
+    max-width:5em;
+    height:auto;
+    margin: 0 .7em;
+}
+
+#form_title h1 {
+    width: 6.5em;
+    color:white;
+    font-family: "rubik";
+    font-size: 2em;
+    padding-bottom: .3em;
+    letter-spacing: 1.5px;
+    border-bottom: 8px solid white;
+    font-weight:900;
+}
+/* End of form */
+/* end of sosmed --------------------------------------------------------------------------------------------------------------------*/
+/*END OF SECTIONS */
+
+
+
+/* buttons */
+.sideBtn {
+    color:rgb(77, 55, 18);
+    background:#FFB736;
+    border: none;
+    outline:none;
+}
+
+.numBtn {
+    font-size: 25px;
+    border:none;
+    height: 100%;
+    width:1.5em;
+    background: #FFF6A7;
+}
+/* end of buttons */
+.header {
+    display:flex;
+    justify-content: center;
+}
+
+.mainTitle {
+    color: #292533;
+    text-shadow: 0px 4px 2.5px rgba(41, 37, 51,.2);
+    font-size: 3.5em;
+    font-weight: 900;
+    font-family: "rubik";
+    text-align:center;
+    margin-top:2em;
+    padding-bottom:40px;
+    letter-spacing: .05em;
+    border-bottom: 8px solid #292533;
+    width: 7em;
+}
+
+@media(max-width:768px) {
+    .mainTitle {
+        color: #292533;
+        text-shadow: 0px 4px 2.5px rgba(41, 37, 51,.2);
+        font-size: 3em;
+        font-weight: 900;
+        font-family: "rubik";
+        text-align:center;
+        margin-top:2em;
+        padding-bottom:40px;
+        letter-spacing: .05em;
+        border-bottom: 8px solid #292533;
+        width: 7em;
+    }
+    .contactBtn:hover {
+        width:8em;
+        transition: all .3s;
+    }
+}
+
+#contactTitle {
+    color:black;
+    letter-spacing: .01em;
+    width: 7.5em;
+}
+
+#paginator {
+    display:flex;
+    height:40px;
+    width:100vw;
+    position: relative;
+    bottom: 200px;
+    justify-content: center;
+    font-family: "rubik";
+}
+
+#upBtn {
+    color:rgb(77, 55, 18);
+    background:#FFB736;
+    border:none;
+    outline:none;
+    position: absolute;
+    bottom: 60px;
+    right:40px;
+}
